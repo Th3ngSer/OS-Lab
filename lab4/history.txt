@@ -1,0 +1,50 @@
+  257  git init
+  258  git branch -m main
+  259  git remote add origin https://github.com/Th3ngSer/OS-Lab.git
+  260  git remote -v
+  261  git status
+  262  git add .
+  263  git commit -m "Fist Commit token"
+  264  git config --global user.email "thongking1280@gmail.com"
+  265  git push -u origin main
+  266  git status
+  267  git init
+  268  git status
+  269  ls
+  270  git commit -m "commit token"
+  271  git remote -v
+  272  git commit -m "commit token"
+  273  git config --global user.email "thongking1280@gmail.com"
+  274  git config --global user.name  "Th3ngSer"
+  275  git commit -m "commit file to token"
+  276  git push -u origin main
+  277  cd lab4
+  278  ls -l ~ > ~/lab4/contents.txt
+  279  ls
+  280  sort ~/lab4/contents.txt > ~/lab4/contents-sort.txt
+  281  ls
+  282  tail /etc/passwd > ~/lab4/Documents/newfile.txt
+  283  mkdir Document
+  284  cd Document/
+  285  touch newfile.txt
+  286  tail /etc/passwd > ~/lab4/Documents/newfile.txt
+  287  ls
+  288  cd ..
+  289  ls
+  290  rm Document
+  291  rm -r Document
+  292  ls
+  293  mkdir Documents
+  294  tail /etc/passwd > ~/lab4/Documents/newfile.txt
+  295  cd Documents
+  296  ls
+  297  cd ..
+  298  tail /etc/passwd > ~/lab4/Documents/newfile.txt
+  299  tree
+  300  wc -w < ~/lab4/contents.txt >> ~/lab4/filed2.txt
+  301  tree
+  302  head -n 5 /etc/paswd | sort -r
+  303  head -n 5 /etc/passwd | sort -r > ~/lab4/head-sorted.txt
+  304  tail -n 9 ~/lab4/contents.txt | wc -m
+  305  find /usr/share -name test
+  306  history | tail -n 50 > ~/lab4/history.txt

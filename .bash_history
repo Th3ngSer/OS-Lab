@@ -246,3 +246,21 @@ ls -l > ~/lab4/contents.txt
 ls
 rm contents.txy
 ls
+mkdir class_activity1 class_activity2
+ls
+cd class_activit
+cd ..
+mkdir class_activity3 Desktop Document 
+ls
+tree
+ls
+git init
+git branch -m main
+git remote add origin https://github.com/Th3ngSer/OS-Lab.git
+git remote -v
+git status
+git add .
+git commit -m "Fist Commit token"
+git config --global user.email "thongking1280@gmail.com"
+git push -u origin main
+git status

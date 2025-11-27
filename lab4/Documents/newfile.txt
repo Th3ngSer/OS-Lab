@@ -1,0 +1,10 @@
+gic-thy-pharoth:x:1103:1103::/home/gic-thy-pharoth:/bin/bash
+gic-loeng-pheaktra:x:1104:1104::/home/gic-loeng-pheaktra:/bin/bash
+gic-lim-kity:x:1105:1105::/home/gic-lim-kity:/bin/bash
+gic-guov-houysang:x:1106:1106::/home/gic-guov-houysang:/bin/bash
+gic-chork-ratanakdavid:x:1107:1107::/home/gic-chork-ratanakdavid:/bin/bash
+gic-phe-rithika:x:1108:1108::/home/gic-phe-rithika:/bin/bash
+gic-sar-vichada:x:1109:1109::/home/gic-sar-vichada:/bin/bash
+gic-din-rasy:x:1110:1110::/home/gic-din-rasy:/bin/bash
+gic-rathpisey:x:1111:1111::/home/gic-rathpisey:/bin/bash
+gic-la-vireak:x:1112:1112::/home/gic-la-vireak:/bin/bash
