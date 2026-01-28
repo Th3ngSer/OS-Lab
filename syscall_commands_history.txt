@@ -1,0 +1,50 @@
+ 1969  git checkout -b Class_Activity4
+ 1970  git branch -a
+ 1971  git checkout Class_Activity1
+ 1972  git status
+ 1973  git checkout -b CPU Scheduling Simulator
+ 1974  git checkout -b CPU_Scheduling Simulator
+ 1975  git branch -a
+ 1976  git checkout -b CPU_Scheduling_Simulator
+ 1977  cd "/home/thongking/Documents/I4-GIC/OS-Course/CPU_Scheduling_Simulator/" && g++ algorithm.cpp -o algorithm && "/home/thongking/Documents/I4-GIC/OS-Course/CPU_Scheduling_Simulator/"algorithm
+ 1978  cls
+ 1979  clear
+ 1980  cd "/home/thongking/Documents/I4-GIC/OS-Course/CPU_Scheduling_Simulator/" && g++ algorithm.cpp -o algorithm && "/home/thongking/Documents/I4-GIC/OS-Course/CPU_Scheduling_Simulator/"algorithm
+ 1981  cd "/home/thongking/Documents/I4-GIC/OS-Course/CPU_Scheduling_Simulator/" && g++ simulator.cpp -o simulator && "/home/thongking/Documents/I4-GIC/OS-Course/CPU_Scheduling_Simulator/"simulator
+ 1982  cpp run
+ 1983  cd "/home/thongking/Documents/I4-GIC/OS-Course/CPU_Scheduling_Simulator/" && g++ simulator.cpp -o simulator && "/home/thongking/Documents/I4-GIC/OS-Course/CPU_Scheduling_Simulator/"simulator
+ 1984  clear
+ 1985  cd "/home/thongking/Documents/I4-GIC/OS-Course/CPU_Scheduling_Simulator/" && g++ simulator.cpp -o simulator && "/home/thongking/Documents/I4-GIC/OS-Course/CPU_Scheduling_Simulator/"simulator
+ 1986  git branch
+ 1987  git status
+ 1988  git fetch origin
+ 1989  git add .
+ 1990  git commit -m "CPU_Scheduling _Simulator"
+ 1991  git remote add origin https://github.com/Th3ngSer/OS-Lab.git
+ 1992  git branch -a
+ 1993  git push -u origin CPU_Scheduling_Simulator 
+ 1994  git switch main
+ 1995  git switch CPU_Scheduling_Simulator 
+ 1996  cd "/home/thongking/Documents/I4-GIC/OS-Course/CPU_Scheduling_Simulator/" && g++ simulator.cpp -o simulator && "/home/thongking/Documents/I4-GIC/OS-Course/CPU_Scheduling_Simulator/"simulator
+ 1997  cd ~/class_activity1
+ 1998  ls
+ 1999  qrep -r 
+ 2000  cd lab1
+ 2001  cls
+ 2002  ls
+ 2003  cd home
+ 2004  cd ~
+ 2005  mkdir -p ~/class_activity1
+ 2006  cd ~/class_activity1/
+ 2007  touch printsyscall.c
+ 2008  nano printsyscall.c 
+ 2009  gcc printsyscall.c -o printsyscall ./printsyscall
+ 2010  touch copyfilesyscall.c
+ 2011  nano copyfilesyscall.c 
+ 2012  echo "This is result.txt content" > result.txt
+ 2013  gcc copyfilesyscall.c -o copyfilesyscall
+ 2014  ./copyfilesyscall
+ 2015  cat result.txt 
+ 2016  cat copyresult.txt 
+ 2017  history | tail -n 50 > /home/yourname/class_activity1/syscall_commands_history.txt
+ 2018  history | tail -n 50 > ~/class_activity1/syscall_commands_history.txt

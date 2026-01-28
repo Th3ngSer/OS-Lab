@@ -1,0 +1,3 @@
+printsyscall
+copyfilesyscall
+*.o
