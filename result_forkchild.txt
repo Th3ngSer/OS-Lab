@@ -1,0 +1,5 @@
+forkchild
+forkchild.c
+result_forkchild.txt
+Parent process started (PID: 64168)
+Child process completed

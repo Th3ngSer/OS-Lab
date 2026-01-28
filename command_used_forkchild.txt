@@ -1,0 +1,15 @@
+ 2032  git push -f origin main
+ 2033  git push -f origin Class_activity1
+ 2034  git push -u origin Class_activity1
+ 2035  git status
+ 2036  git branch -a
+ 2037  cd ..
+ 2038  mkdir -p ~/class_activity2
+ 2039  cd ~/class_activity2
+ 2040  pwd
+ 2041  nano forkchild.c
+ 2042  gcc -o forkchild forkchild.c
+ 2043  ls -l forkchild
+ 2044  ./forkchild > result_forkchild.txt
+ 2045  cat result_forkchild.txt 
+ 2046  history | tail -n 15 > command_used_forkchild.txt
