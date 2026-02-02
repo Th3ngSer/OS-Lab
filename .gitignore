@@ -1,0 +1,6 @@
+*.o
+*.out
+helloworld
+forkchild
+printsyscall
+copyfilesyscall

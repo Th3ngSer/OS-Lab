@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# ===== DOWNLOAD MANAGER SCRIPT =====
+
+for file in *; do
+  if [ -f "$file" ]; then
+    ext="${file##*.}"
+
+    # Skip files without extension
+    if [ "$ext" = "$file" ]; then
+      continue
+    fi
+
+    mkdir -p "$ext"
+    mv "$file" "$ext/"
+  fi
+done
+
+echo "✅ Files organized by extension"
