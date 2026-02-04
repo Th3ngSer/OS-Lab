@@ -1,0 +1,66 @@
+Main started
+Thread 0 started | pthread_self=125641632511680
+Thread 0 -> step 1
+Thread 1 started | pthread_self=125641624118976
+Thread 1 -> step 1
+Thread 2 started | pthread_self=125641615726272
+Thread 2 -> step 1
+Thread 3 started | pthread_self=125641607333568
+Thread 3 -> step 1
+Thread 4 started | pthread_self=125641598940864
+Thread 4 -> step 1
+Thread 5 started | pthread_self=125641590548160
+Thread 5 -> step 1
+Thread 6 started | pthread_self=125641582155456
+Thread 6 -> step 1
+Thread 7 started | pthread_self=125641573762752
+Thread 7 -> step 1
+Thread 1 -> step 2
+Thread 2 -> step 2
+Thread 0 -> step 2
+Thread 3 -> step 2
+Thread 4 -> step 2
+Thread 5 -> step 2
+Thread 6 -> step 2
+Thread 7 -> step 2
+Thread 2 -> step 3
+Thread 1 -> step 3
+Thread 0 -> step 3
+Thread 5 -> step 3
+Thread 4 -> step 3
+Thread 6 -> step 3
+Thread 3 -> step 3
+Thread 7 -> step 3
+Thread 2 -> step 4
+Thread 0 -> step 4
+Thread 7 -> step 4
+Thread 3 -> step 4
+Thread 6 -> step 4
+Thread 5 -> step 4
+Thread 1 -> step 4
+Thread 4 -> step 4
+Thread 5 -> step 5
+Thread 6 -> step 5
+Thread 4 -> step 5
+Thread 0 -> step 5
+Thread 1 -> step 5
+Thread 3 -> step 5
+Thread 2 -> step 5
+Thread 7 -> step 5
+Thread 4 -> step 6
+Thread 1 -> step 6
+Thread 6 -> step 6
+Thread 5 -> step 6
+Thread 0 -> step 6
+Thread 3 -> step 6
+Thread 2 -> step 6
+Thread 7 -> step 6
+Thread 4 finished
+Thread 1 finished
+Thread 5 finished
+Thread 6 finished
+Thread 3 finished
+Thread 7 finished
+Thread 2 finished
+Thread 0 finished
+Main finished

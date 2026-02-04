@@ -1,0 +1,38 @@
+
+=== SingleThreadExecutor ===
+Task 1 running on pool-1-thread-1
+Task 2 running on pool-1-thread-1
+Task 3 running on pool-1-thread-1
+Task 4 running on pool-1-thread-1
+Task 5 running on pool-1-thread-1
+Task 6 running on pool-1-thread-1
+Task 7 running on pool-1-thread-1
+Task 8 running on pool-1-thread-1
+Task 9 running on pool-1-thread-1
+Task 10 running on pool-1-thread-1
+SingleThreadExecutor finished.
+
+=== CachedThreadPool ===
+Task 1 running on pool-2-thread-1
+Task 2 running on pool-2-thread-2
+Task 3 running on pool-2-thread-3
+Task 4 running on pool-2-thread-4
+Task 5 running on pool-2-thread-5
+Task 6 running on pool-2-thread-6
+Task 7 running on pool-2-thread-7
+Task 8 running on pool-2-thread-8
+Task 9 running on pool-2-thread-9
+Task 10 running on pool-2-thread-10
+CachedThreadPool finished.
+
+=== ForkJoinPool Demo ===
+Computed [25000,37500) by ForkJoinPool-1-worker-8
+Computed [0,12500) by ForkJoinPool-1-worker-6
+Computed [62500,75000) by ForkJoinPool-1-worker-3
+Computed [37500,50000) by ForkJoinPool-1-worker-2
+Computed [87500,100000) by ForkJoinPool-1-worker-1
+Computed [50000,62500) by ForkJoinPool-1-worker-7
+Computed [12500,25000) by ForkJoinPool-1-worker-4
+Computed [75000,87500) by ForkJoinPool-1-worker-5
+Result = 100000
+Parallelism = 7
