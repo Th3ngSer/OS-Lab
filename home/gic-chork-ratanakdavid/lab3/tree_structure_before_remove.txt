@@ -1,7 +1,0 @@
-/home/gic-chork-ratanakdavid/Desktop/FrenchFolder
-├── document_cinque.txt
-├── document_quatre.txt
-├── document_trois.txt
-└── document_un.txt
-
-1 directory, 4 files
