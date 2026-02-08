@@ -2,93 +2,95 @@
 
 
 
-# 🖥️ CPU Scheduling Simulator
+# 🖥️ CPU Scheduling Simulator (Python + Tkinter)
 
-![Language](https://img.shields.io/badge/Language-C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Course](https://img.shields.io/badge/Course-OS%20Lab-orange?style=for-the-badge)
-![Department](https://img.shields.io/badge/Dept-GIC%20(I4)-lightgrey?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
-
-> **A component of the OS-Lab course (GIC Department, I4).**
->
-> This simulator simulates the behavior of various CPU scheduling algorithms, calculating key performance metrics (**Waiting Time**, **Turnaround Time**, **Response Time**) and visualizing the execution order using a text-based **Gantt Chart**.
+This project provides a GUI-based CPU scheduling simulator written in Python. It calculates **Waiting Time** and **Turnaround Time**, and shows a **Gantt Chart** for each scheduling algorithm.
 
 ---
 
-## 📖 Table of Contents
-- [Project Overview](#-project-overview)
-- [Supported Algorithms](#-supported-algorithms)
-- [Prerequisites & Installation](#-prerequisites--installation)
-- [Input Formatting](#-input-formatting)
-- [Usage & Commands](#-usage--commands)
-- [Output Examples](#-output-examples)
+## ✅ Setup Instructions
+
+### Requirements
+- Python 3 (Tkinter is included by default in most Python installs)
+
+### Run the GUI
+1. Open a terminal in this folder:
+    - CPU_Scheduling_Simulator/
+2. Run the app:
+    - python3 algorithm.py
 
 ---
 
-## 🧠 Supported Algorithms
+## 🧠 Algorithms Implemented
 
-This simulator implements the following five scheduling policies:
+**FCFS (First Come First Serve)**
+- Non-preemptive
+- Executes processes in arrival order.
 
-| Algorithm | Type | Description |
-| :--- | :--- | :--- |
-| **FCFS** (First Come First Serve) | Non-Preemptive | Processes are executed strictly in the order of arrival. Simple but can lead to high waiting times. |
-| **SJF** (Shortest Job First) | Non-Preemptive | Selects the process with the smallest **Burst Time**. Runs to completion once started. |
-| **SRT** (Shortest Remaining Time) | **Preemptive** | The preemptive version of SJF. Switches immediately if a new process arrives with a shorter remaining time. |
-| **RR** (Round Robin) | **Preemptive** | Assigns fixed time slots (**Quantum**). If unfinished, the process moves to the back of the queue. *(Default Quantum: 2)* |
-| **MLFQ** (Multilevel Feedback Queue) | **Complex** | A 3-level queue system handling processes based on CPU bursts and aging. |
+**SJF (Shortest Job First)**
+- Non-preemptive
+- Chooses the process with the smallest burst time among arrived processes.
 
-### 🔍 MLFQ Logic Details
-The Multilevel Feedback Queue is implemented with the following hierarchy:
-* **Queue 1 (High Priority):** Round Robin (Quantum = 2)
-* **Queue 2 (Medium Priority):** Round Robin (Quantum = 4)
-* **Queue 3 (Low Priority):** FCFS
-* **Features:**
-    * **Demotion:** Processes consuming their full quantum move down a priority level.
-    * **Aging:** Processes waiting too long in lower queues are promoted to prevent starvation.
+**SRTF (Shortest Remaining Time First)**
+- Preemptive
+- Always selects the process with the smallest remaining time.
 
----
+**RR (Round Robin)**
+- Preemptive
+- Each process runs for a fixed quantum, then moves to the back of the queue.
 
-## ⚙️ Prerequisites & Installation
-
-### System Requirements
-* **C++ Compiler:** `g++` (MinGW for Windows or standard GCC for Linux/macOS).
-* **Git:** To clone the repository.
-
-### Setup Steps
-
-1.  **Clone the Repository:**
-    ```bash
-    git clone <your-repo-url>
-    cd <your-repo-folder>
-    ```
-
-2.  **Switch to Simulator Branch:**
-    ```bash
-    git checkout CPU_Scheduling_Simulator
-    ```
-
-3.  **Compile the Code:**
-    ```bash
-    g++ main.cpp -o scheduler
-    ```
-    *(Note: Replace `main.cpp` with your actual source filename if different).*
+**MLFQ (Multilevel Feedback Queue)**
+- Multi-level queue scheduling
+- Queue 1: RR (Q1)
+- Queue 2: RR (Q2)
+- Queue 3: FCFS
 
 ---
 
-## 📂 Input Formatting
+## ▶️ How to Run Each Scheduler
 
-### File Format
-The simulator reads process data from a text file (e.g., `process.txt`). Ensure this file is in the same directory as the executable.
+1. Start the GUI:
+    - python3 algorithm.py
+2. Load data:
+    - Click **Load From File** (or add processes manually).
+3. Choose the algorithm:
+    - Select FCFS, SJF, SRTF, RR, or MLFQ from the dropdown.
+4. Set parameters (if needed):
+    - RR: set **RR Quantum**
+    - MLFQ: set **Q1** and **Q2**
+5. Click **Run Selected** to view:
+    - Results table (CT, TAT, WT)
+    - Gantt chart visualization
 
-```
+---
 
+## 📂 Input File Format
 
-```
-### ScreenShots Format 
-4. Screenshots or Gantt chart output
-ProcessID   ArrivalTime   BurstTime   Priority(Optional)
+Each line:
+ProcessID  ArrivalTime  BurstTime
 
-![alt text](image.png)
-```
+Example:
+1 0 5
+2 1 3
+3 2 8
+4 3 6
 
+---
+
+## 📸 Example Output
+
+1. FCFS
+![alt text](./FCFS.png)
+
+2. SJF
+![alt text](./SJF.png)
+
+3. SRT
+![alt text](./SRT.png)
+
+4. RR
+![alt text](./RR.png)
+
+5. MLFQ
+![alt text](./MLFQ.png)
 
